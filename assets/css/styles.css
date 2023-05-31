@@ -74,10 +74,21 @@ a[href] {
 }
 .home-img{
     position: absolute;
+
     
+}
+.home-img::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.45);
 }
 .home-img img{
     width: 100%;
+   
     
 }
 .home-content{
@@ -101,13 +112,14 @@ a[href] {
     margin-top: 12px ;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: rgb(168, 48, 48);
 
 }
 .home-content .name-text-sub{
     font-size:76px;
     font-weight: 800;
     margin: 0;
-    color: rgb(168, 48, 48);
+    color: var(--white);
     line-height: 50px;
     padding: 8px 0 24px 0;
 }
@@ -251,9 +263,144 @@ a[href] {
     opacity: 0.7;
 }
 
+    /* resume */
 #resume{
+    color: var(--white);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: black;
+}
+.resume-container{
+    
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.resume-qualifies{
+    width: 50%;
+    padding-left: 30px;
+}
+.resume-title{
+    
+}
+.resume-title span{
+    color: blanchedalmond;
+}
+.resume-title h1{
+    line-height: 50px;
+    font-size: 36px;
+}
+.education-items{
+    margin-top: 50px;
+}
+.education-item{
+    display: grid;
+    grid-template-columns: 5% 95%;
+    margin-bottom: 12px;
+    
+}
+.edu-line-col{
+    position: relative;
+    height: auto;
+    width: 1px;
+    border: 0 solid blanchedalmond;
+    content: "";
+    background-color: var(--white);
+    
+}
+.edu-line-col::before{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: -3px;
+    left: -4px;
+    content: "";
+    background-color: blanchedalmond;
+}
+.edu-content{
+    padding-right: 40px;
+    text-overflow: clip; 
+    letter-spacing: 2px;
+}
+.edu-year{ 
+    font-size: 14px;
+    line-height: 20px;
+}
+.edu-year span{
+    font-size: 14px;
+}
+.edu-item-content{
+    margin-top: 8px;
+    width: 100%;
+    word-break: break-word;
+    margin-bottom: 8px;
+    
+}
+.edu-item-content{
+    
+}
+.edu-item-title{
+    color: rgb(168, 48, 48);
+}
+.edu-item-sub{
+    
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 12px;
+}
+
+.resume-export{
+    width: 50%;
+}
+.resume-content{
+    margin-top: 24px;
+}
+.resume-content-skill{
 
 }
+.resume-skill-title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 16px;
+}
+.resume-content-item{
+    margin: 0 0 24px 0;
+}
+
+.resume-item-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.resume-item-name{
+
+}
+.resume-item-percent{
+
+}
+
+.skill-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #ccc;
+    
+    margin-bottom: 10px;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.5s ease-in-out;
+}
+  
+
+
+
 #portfolio{
 
 }

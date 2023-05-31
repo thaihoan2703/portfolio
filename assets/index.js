@@ -22,3 +22,7 @@ myBtn.addEventListener("click", function () {
   //Nếu button được click thì nhảy về đầu trang
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+function setSkillbarValue(val) {
+  const skillBar = document.querySelector(".skill-progress");
+  skillBar.style.width = val + "%";
+}
